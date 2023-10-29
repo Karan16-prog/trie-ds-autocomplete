@@ -46,3 +46,12 @@ Trie.prototype.startsWith = function (prefix) {
   }
   return true;
 };
+
+// console log to check output of search & startsWith
+trie = new Trie();
+trie.insert("apple");
+trie.search("apple"); // return True
+trie.search("app"); // return False
+trie.startsWith("app"); // return True
+trie.insert("app");
+trie.search("app"); // return True
